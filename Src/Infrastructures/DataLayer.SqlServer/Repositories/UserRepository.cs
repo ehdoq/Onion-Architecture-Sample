@@ -7,7 +7,12 @@ namespace DataLayer.SqlServer.Repositories
     {
         public UserRepository(AppDbContext dbContext) : base(dbContext)
         {
+            
+        }
 
+        public User GetByMobile(string mobile)
+        {
+            return _dbContext.Users.SingleOrDefault(x => x.Mobile == mobile);    
         }
     }
 }

@@ -29,5 +29,15 @@ namespace Application.Services.Users
 
             return user;
         }
+
+        public bool Login(LoginUserDto loginUserDto)
+        {
+            var user = _userRepository.GetByMobile(loginUserDto.Mobile);
+
+            if (user != null)
+                return SecurePasswordHasher.Verify(loginUserDto.Password, user.Password);
+
+            return false;
+        }
     }
 }
