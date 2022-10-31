@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{65FEB79B-83B2-4164-AB79-0FB43DAD90B8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{D74DACCD-5A4C-475B-9E02-96291B826D10}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5DA6593C-84DB-4AE1-B111-275AE7DA2510}"
@@ -22,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer.SqlServer", "Src\Infrastructures\DataLayer.SqlServer\DataLayer.SqlServer.csproj", "{7C9A9012-C0CD-4D8E-9550-E03E9C70C6A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "Src\EndPoints\API\API.csproj", "{8D0B93D1-B592-48B1-B1C0-2F02461AA6B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APITest", "Tests\APITest\APITest.csproj", "{E02CFBFC-ED8E-42E1-8382-5CCC8CFDCD13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +45,10 @@ Global
 		{8D0B93D1-B592-48B1-B1C0-2F02461AA6B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D0B93D1-B592-48B1-B1C0-2F02461AA6B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D0B93D1-B592-48B1-B1C0-2F02461AA6B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E02CFBFC-ED8E-42E1-8382-5CCC8CFDCD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02CFBFC-ED8E-42E1-8382-5CCC8CFDCD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02CFBFC-ED8E-42E1-8382-5CCC8CFDCD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02CFBFC-ED8E-42E1-8382-5CCC8CFDCD13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +61,7 @@ Global
 		{3DCB2E27-0944-40BA-918B-E4A1E7B4E80C} = {C6CACBD3-A4EB-4C44-9B06-950903763C52}
 		{7C9A9012-C0CD-4D8E-9550-E03E9C70C6A0} = {0566E833-CED9-4BDF-8996-FBC0326B4C13}
 		{8D0B93D1-B592-48B1-B1C0-2F02461AA6B6} = {78893267-82A7-4F5F-A0E8-8B2D0F7D9CA9}
+		{E02CFBFC-ED8E-42E1-8382-5CCC8CFDCD13} = {5DA6593C-84DB-4AE1-B111-275AE7DA2510}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC6BAF44-FFEE-4F34-B433-04832BA8E9FA}
