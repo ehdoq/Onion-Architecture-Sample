@@ -7,5 +7,6 @@ namespace Application.Services.Users
     {
         User Register(AddUserDto addUserDto);
         bool Login(LoginUserDto loginUserDto);
+        User GetUserByMobile(string mobile);
     }
 }

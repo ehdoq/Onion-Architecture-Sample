@@ -1,7 +1,10 @@
 using Application.Models.User;
+using Application.Models.UserExam;
+using Application.Services.UserExams;
 using Application.Services.Users;
 using DataLayer.SqlServer.Commons;
 using DataLayer.SqlServer.Repositories;
+using Domain.UserExams;
 using Domain.Users;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -35,6 +38,9 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+builder.Services.AddScoped<IUserExamService, UserExamService>();
+builder.Services.AddScoped<IUserExamRepository, UserExamRepository>();
 
 builder.Services.AddTransient<IValidator<AddUserDto>, AddUserDtoValidator>();
 builder.Services.AddTransient<IValidator<LoginUserDto>, LoginUserDtoValidator>();

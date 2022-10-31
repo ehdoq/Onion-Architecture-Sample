@@ -39,5 +39,10 @@ namespace Application.Services.Users
 
             return false;
         }
+
+        public User GetUserByMobile(string mobile)
+        {
+            return _userRepository.GetByMobile(mobile); 
+        }
     }
 }
